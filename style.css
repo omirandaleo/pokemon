@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+:root{
+    --cor-cima: #444444;
+    --cor-baixo: #171717;
+    --cor-numero: #7F8487;
+    --cor-nome: #383838;
+    --cor-bordar: #333;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, var(--cor-cima), var(--cor-baixo) );
+    min-height: 100vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.Pokemon_image{
+    position: absolute;
+    bottom:  55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.Pokemon_data {
+    position: absolute;
+    font-weight: 510;
+    color: var(--cor-numero);
+    top: 54.4%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.Pokemon_nome {
+    color: var(--cor-nome);
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid var(--cor-bordar);
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--cor-nome);
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.btn-prev, .btn-next {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid var(--cor-bordar);
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 var(--cor-baixo);
+}
+
+.btn-prev:hover   {
+   box-shadow: inset -4px 4px 0 #222;
+   font-size: 0.9rem;
+}
+
+.btn-next:hover   {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center ;;
+    color: white;
+}
